@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>!!!${1:5}
+	<string>!!!${1:}
 %html
   %head
 ${2:    %meta{:charset =&gt; "${3:UTF-8}"\}
@@ -17,7 +17,7 @@ ${2:    %meta{:charset =&gt; "${3:UTF-8}"\}
 	<key>name</key>
 	<string>Quick Template</string>
 	<key>scope</key>
-	<string>text.html, text.haml</string>
+	<string>text.haml</string>
 	<key>tabTrigger</key>
 	<string>template</string>
 	<key>uuid</key>
