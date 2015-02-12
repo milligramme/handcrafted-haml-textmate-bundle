@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%br$0</string>
+	<string>&lt;${1:p}&gt;$TM_SELECTED_TEXT&lt;/${1/\s.*//}&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^W</string>
 	<key>name</key>
-	<string>br</string>
+	<string>Wrap Selection in Open/Close Tag</string>
 	<key>scope</key>
 	<string>text.haml</string>
-	<key>tabTrigger</key>
-	<string>br</string>
 	<key>uuid</key>
-	<string>6889AB8F-F3DD-4857-B8B3-42653FD5C335</string>
+	<string>7D9DF812-96EE-4BEB-A1B7-C59408E16B56</string>
 </dict>
 </plist>

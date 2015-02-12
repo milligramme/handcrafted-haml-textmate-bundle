@@ -5,28 +5,20 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
-
-require 'cgi'
-out = CGI.escapeHTML($stdin.read)
-out.gsub!("'", '&amp;#39;')
-out.gsub!("“", '&amp;#8220;')
-out.gsub!("”", '&amp;#8221;')
-out.gsub!("…", '&amp;#8230;')
-print out</string>
+	<string>perl -pe 's/[\$`\\]/\\$&amp;/g; s/([ \t]*)(.+)/$1&lt;\${1:li}&gt;$2&lt;\/\${1\/\\s.*\/\/}&gt;/'</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>~@x</string>
+	<string>^@W</string>
 	<key>name</key>
-	<string>Escape HTML</string>
+	<string>Wrap Each Selected Line in Open/Close Tag</string>
 	<key>output</key>
-	<string>replaceSelectedText</string>
+	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>text.html,text.haml</string>
 	<key>uuid</key>
-	<string>7F790F32-5D23-4111-8964-9BF80A5B0498</string>
+	<string>61F200F5-2BDF-477B-AB96-DC3D2D2BF0D3</string>
 </dict>
 </plist>
