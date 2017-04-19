@@ -6,10 +6,10 @@
 	<string>!!!${1:}
 %html
   %head
-${2:    %meta{:charset =&gt; "${3:UTF-8}"\}
+${2:    %meta{charset: "${3:UTF-8}"\}
     %title ${4:title}
-    ${50:%link{:rel =&gt; "stylesheet", :href =&gt; "${51:}"\}
-}    ${60:%script{:src =&gt; "${61:}"\}
+    ${50:%link{rel: "stylesheet", href: "${51:}"\}
+}    ${60:%script{src: "${61:}"\}
 }
 }  %body
     $0
